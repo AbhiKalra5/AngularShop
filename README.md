@@ -17,13 +17,13 @@ Run `npm start` for a dev server. Navigate to `http://localhost:4600/`. The app 
 UserInfo for using the App
 username: ferb@gmail.com
 password: 12345
-More users in file: https://github.com/AbhiKalra5/AngularShop/blob/main/src/data/user-data.json
+More users in file: https://github.com/AbhiKalra5/angularShop/blob/main/src/data/category-data.json
 
 Products for the App.
-Products file: https://github.com/AbhiKalra5/AngularShop/blob/main/src/data/product-data.json
+Products file: https://github.com/AbhiKalra5/angularShop/blob/main/src/data/product-data.json
 
 Categories for the App.
-Categories Data file: https://github.com/AbhiKalra5/AngularShop/blob/main/src/data/category-data.json
+Categories Data file: https://github.com/AbhiKalra5/angularShop/blob/main/src/data/category-data.json
 
 #### About
 
@@ -57,7 +57,7 @@ Points for  evaluators
 
 1. Category tree upto one level is maintained.
 2. Translation are implemented. Instead of dropdown in header the language changer feature is implemented in side-bar. Toggle Sidebar from hamburger button shown in top left just below nav-brand.
-3. The App is hosted on netlify with url: https://silly-montalcini-402da2.netlify.app/
+3. The App is hosted on netlify with url: https://sharp-khorana-3c02c6.netlify.app/
 4. Auth Guards have been implemented in the project. The user will be unable to go to cart page until he is logged in. Although there is no restriction in adding product to cart. The anonymous cart will be restored to the user after loggin into the app.
 5. Basic Routing has been implemented in the application with the use of lazy loading. Two modules are loaded lazily: Auth Module and Cart Module.
 6. Form Validation is implemented in cart page to address fields.
