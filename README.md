@@ -17,7 +17,8 @@ Run `npm start` for a dev server. Navigate to `http://localhost:4600/`. The app 
 UserInfo for using the App
 username: ferb@gmail.com
 password: 12345
-More users in file: https://github.com/AbhiKalra5/angularShop/blob/main/src/data/category-data.json
+
+More users in file: https://github.com/AbhiKalra5/angularShop/blob/main/src/data/user-data.json
 
 Products for the App.
 Products file: https://github.com/AbhiKalra5/angularShop/blob/main/src/data/product-data.json
