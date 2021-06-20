@@ -1,0 +1,48 @@
+.color-deep-purple {
+  background-color: #673ab7;
+  color: white;
+  text-align: center;
+}
+.sidenav-container {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  // top: -70px;
+  padding-bottom: 0px;
+  z-index: 10;
+}
+
+.sidenav-content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  z-index: 8;
+}
+@media (max-width: 991px) {
+  .sidenav-container {
+    height: 624px;
+  }
+}
+@media (min-width: 992px) {
+  .sidenav-container {
+    height: 678px;
+  }
+}
+.sidenav {
+  padding: 0px;
+}
+
+.hamburger.button {
+  position: absolute;
+  display: flex;
+  top: 10px;
+  left: -20px;
+  z-index: 9;
+}
+.hamburger-icon {
+  font-size: 20px;
+  margin-right: -40px;
+}
+.width-2x {
+  width: 120px;
+}

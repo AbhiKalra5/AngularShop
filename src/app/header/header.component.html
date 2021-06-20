@@ -1,0 +1,135 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span
+      class="navbar-brand"
+      [ngClass]="{
+        'mobile-hidden': searchFocused,
+        'search-focused': searchFocused
+      }"
+      [routerLink]="['/']"
+      routerLinkActive="router-link-active"
+      matTooltip="{{ 'HEADER.HOMEPAGETOOLTIP' | translate }}"
+      >Black-Market Shop</span
+    >
+    <div
+      [ngStyle]="{ display: searchFocused ? 'none' : '' }"
+      class="hover-rotate"
+      (click)="changeSearchState()"
+    >
+      <button
+        class="smaller-fab"
+        mat-mini-fab
+        color="accent"
+        matTooltip="{{ 'HEADER.SEARCHTOOLTIP' | translate }}"
+      >
+        <mat-icon class="smaller-icon">search</mat-icon>
+      </button>
+    </div>
+    <mat-form-field
+      class="search-bar"
+      [ngStyle]="{ display: searchFocused ? '' : 'none' }"
+    >
+      <input
+        matInput
+        placeholder="search"
+        [(ngModel)]="searchText"
+        (keyup)="waitForEnter($event)"
+      />
+      <mat-icon
+        matSuffix
+        [ngStyle]="{ cursor: 'pointer' }"
+        (click)="searchSomething()"
+        >search</mat-icon
+      >
+      <mat-icon
+        matSuffix
+        [ngStyle]="{ cursor: 'pointer' }"
+        (click)="changeSearchState()"
+        >close</mat-icon
+      >
+    </mat-form-field>
+    <span class="example-spacer"></span>
+    <div
+      [ngClass]="{
+        'mobile-hidden': searchFocused,
+        'search-focused': searchFocused
+      }"
+    >
+      <span *ngIf="!loggedIn; else logout">
+        <button
+          mat-raised-button
+          color="accent"
+          class="desktop-visible"
+          [routerLink]="['/login']"
+          routerLinkActive="router-link-active"
+          matTooltip="{{ 'HEADER.LOGINTOOLTIP' | translate }}"
+        >
+          {{ "HEADER.LOGINBUTTON" | translate }}
+        </button>
+        <button
+          mat-fab
+          mat-raised-button
+          color="accent"
+          class="mobile-visible"
+          [routerLink]="['/login']"
+          routerLinkActive="router-link-active"
+          matTooltip="{{ 'HEADER.LOGINTOOLTIP' | translate }}"
+        >
+          <mat-icon>login</mat-icon>
+        </button>
+      </span>
+      <ng-template #logout>
+        <button
+          mat-fab
+          mat-raised-button
+          color="accent"
+          class="mr-3 mini-screen-visible"
+          [routerLink]="['/cart']"
+          routerLinkActive="router-link-active"
+        >
+          <mat-icon matBadge="{{ cartCount }}" matBadgeColor="warn"
+            >shopping_cart</mat-icon
+          >
+        </button>
+        <button
+          mat-raised-button
+          color="accent"
+          class="mr-3 mini-screen-hidden desktop-visible"
+          [routerLink]="['/cart']"
+          matTooltip="{{ 'HEADER.CARTTOOLTIP' | translate }}"
+          routerLinkActive="router-link-active"
+        >
+          <mat-icon matBadge="{{ cartCount }}" matBadgeColor="warn"
+            >shopping_cart</mat-icon
+          >
+        </button>
+        <button
+          mat-fab
+          mat-raised-button
+          color="accent"
+          class="avatar-img-container"
+        >
+          <img class="avatar-img" matListAvatar [src]="avatarImage" alt="" />
+        </button>
+        <button
+          mat-raised-button
+          class="desktop-visible"
+          color="accent"
+          matTooltip="{{ 'HEADER.LOGOUTTOOLTIP' | translate }}"
+          (click)="logoutUser()"
+        >
+          {{ "HEADER.LOGOUTBUTTON" | translate }}
+        </button>
+        <button
+          mat-fab
+          mat-raised-button
+          class="mobile-visible"
+          color="accent"
+          (click)="logoutUser()"
+        >
+          <mat-icon>logout</mat-icon>
+        </button>
+      </ng-template>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>

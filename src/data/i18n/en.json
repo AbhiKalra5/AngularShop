@@ -1,0 +1,58 @@
+{
+  "HOME": {
+    "HELLO": "Hello {{value}}",
+    "QUOTE1": "Clothes mean nothing until someone lives in them.",
+    "QUOTE2": "I don't design clothes. I design dreams.",
+    "QUOTE3": "Fashion is the armor to survive the reality of everyday life.",
+    "STARTBUTTON": "Get Started",
+    "TAGLINE1": "SHOP WITH US",
+    "TAGSUBHEADING1": "Get exclusive discounts from our site !",
+    "TAGLINE2": "Don't worry about delivery charges !!",
+    "TAGSUBHEADING2": "Join us now to get first 5 delivery charges on the house!"
+  },
+  "FOOTER": {
+    "TITLE": "© Made in India with ❤"
+  },
+  "HEADER": {
+    "SEARCHTOOLTIP": "Search Through Products",
+    "HOMEPAGETOOLTIP": "To Homepage",
+    "LOGINBUTTON": "Login",
+    "LOGINTOOLTIP": "Login To Site",
+    "LOGOUTBUTTON": "Logout",
+    "LOGOUTTOOLTIP": "Logout From Site",
+    "CARTTOOLTIP": "Move to Cart Page"
+  },
+  "SIDEBAR": {
+    "TOGGLEBUTTON": "Toggle Side Nav",
+    "CARTSOPTION": "Cart",
+    "CATEGORYOPTION": "Category",
+    "LANGUAGEOPTION": "Languages"
+  },
+  "PLP": {
+    "FILTER": "Filter",
+    "FILTERTOOLTIP": "3 characters required minimum",
+    "ADDTOCARTBUTTON": "Add To Cart",
+    "SHOWINFOBUTTON": "Show Info",
+    "NOPRODUCTSNOTE": "No products for this category.Kindly visit back after some days."
+  },
+  "PDP": {
+    "FEATURELIST": "Features List"
+  },
+  "CART": {
+    "TITLE": "Cart",
+    "CARTTABLENAME": "Name",
+    "CARTTABLEQUANTITY": "Quantity",
+    "CARTTABLECOST": "Cost",
+    "CARTTABLEACTIONS": "Actions",
+    "CARTTABLEDELETEACTIONS": "Delete",
+    "ADDRESSTITLE": "Address",
+    "ADDRESSHOUSENUMBER": "House Number",
+    "ADDRESSSTREETNUMBER": "Street Address",
+    "ADDRESSCITY": "City",
+    "ADDRESSPOSTALCODE": "Postal Code.",
+    "ADDRESSSTATE": "State",
+    "CARTPROCEEDTOPAY": "Proceed To Pay",
+    "CARTTOTALAMOUNT": "Total Amount",
+    "CHECKOUTCONTINUE": "Continue Shopping"
+  }
+}

@@ -1,0 +1,181 @@
+{
+  "data-info": "product-data-version-1",
+  "products": [
+    {
+      "pid": "001",
+      "name": "Poco F1",
+      "categoryid": "Mobile",
+      "features": "SOC SDD 845",
+      "cost": {
+        "unit": "INR",
+        "value": "28000"
+      },
+      "img": "https://angularstore.blob.core.windows.net/angularpics/mobile-poco-f1.jpg"
+    },
+    {
+      "pid": "002",
+      "name": "Poco X3 Pro",
+      "categoryid": "Mobile",
+      "features": "SOC SDD 860",
+      "cost": {
+        "unit": "INR",
+        "value": "18000"
+      },
+      "img": "https://angularstore.blob.core.windows.net/angularpics/mobile-poco-x3.png"
+    },
+    {
+      "pid": "003",
+      "name": "One Plus 9T",
+      "categoryid": "Mobile",
+      "features": "SOC SDD 888",
+      "cost": {
+        "unit": "INR",
+        "value": "49000"
+      },
+      "img": "https://angularstore.blob.core.windows.net/angularpics/mobile-oneplus-9pro.jpeg"
+    },
+    {
+      "pid": "004",
+      "name": "Samsung S20",
+      "categoryid": "Mobile",
+      "features": "SOC SDD 855",
+      "cost": {
+        "unit": "INR",
+        "value": "59000"
+      },
+      "img": "https://angularstore.blob.core.windows.net/angularpics/mobile-samsung-s20-ultra.png"
+    },
+    {
+      "pid": "005",
+      "name": "iPhone 13 Pro",
+      "categoryid": "Mobile",
+      "features": "M1 Chipset",
+      "cost": {
+        "unit": "INR",
+        "value": "139000"
+      },
+      "img": "https://angularstore.blob.core.windows.net/angularpics/mobile-iphone-13.jfif"
+    },
+    {
+      "pid": "006",
+      "name": "Boat Basshead 228",
+      "categoryid": "Accessories",
+      "features": "sweat proof",
+      "cost": {
+        "unit": "INR",
+        "value": "900"
+      },
+      "img": "https://angularstore.blob.core.windows.net/angularpics/accessories-boat-earphone.png"
+    },
+    {
+      "pid": "007",
+      "name": "Asus",
+      "categoryid": "Laptop",
+      "features": "Gaming Laptop by Asus",
+      "cost": {
+        "unit": "INR",
+        "value": "59000"
+      },
+      "img": "https://angularstore.blob.core.windows.net/angularpics/laptop-asus-tuf-gaming.jpg"
+    },
+    {
+      "pid": "008",
+      "name": "Lenovo Thinkpad",
+      "categoryid": "Laptop",
+      "features": "Work related laptop",
+      "cost": {
+        "unit": "INR",
+        "value": "100900"
+      },
+      "img": "https://angularstore.blob.core.windows.net/angularpics/laptop-lenovo-working.png"
+    },
+    {
+      "pid": "009",
+      "name": "Shiva Triology",
+      "categoryid": "books",
+      "features": "Book by Amish Tripathi.",
+      "cost": {
+        "unit": "INR",
+        "value": "900"
+      },
+      "img": "https://angularstore.blob.core.windows.net/angularpics/book-Shiva-Trilogy.jpg"
+    },
+    {
+      "pid": "010",
+      "name": "Harry Potter Series",
+      "categoryid": "books",
+      "features": "Book by J.K.Rowling.",
+      "cost": {
+        "unit": "INR",
+        "value": "1900"
+      },
+      "img": "https://angularstore.blob.core.windows.net/angularpics/book-harry-potter.jpg"
+    },
+    {
+      "pid": "011",
+      "name": "How to Win Friends and Influence People",
+      "categoryid": "books",
+      "features": "Book by Dale Carnegie.",
+      "cost": {
+        "unit": "INR",
+        "value": "300"
+      },
+      "img": "https://angularstore.blob.core.windows.net/angularpics/book-self-help-2.jpg"
+    },
+    {
+      "pid": "012",
+      "name": "The Subtle Art of Not Giving a F*ck",
+      "categoryid": "books",
+      "features": "Book by Mark Manson",
+      "cost": {
+        "unit": "INR",
+        "value": "400"
+      },
+      "img": "https://angularstore.blob.core.windows.net/angularpics/book-self-help-1.jpg"
+    },
+    {
+      "pid": "013",
+      "name": "Digital Minimalism",
+      "categoryid": "books",
+      "features": "Book by Carl Newport",
+      "cost": {
+        "unit": "INR",
+        "value": "500"
+      },
+      "img": "https://angularstore.blob.core.windows.net/angularpics/book-self-help-3.jpg"
+    },
+    {
+      "pid": "014",
+      "name": "Atomic Habits",
+      "categoryid": "books",
+      "features": "Book by James Clear",
+      "cost": {
+        "unit": "INR",
+        "value": "800"
+      },
+      "img": "https://angularstore.blob.core.windows.net/angularpics/book-self-help-4.jpg"
+    },
+    {
+      "pid": "015",
+      "name": "Tamta Sauce😊",
+      "categoryid": "Household",
+      "features": "Best tamta used here",
+      "cost": {
+        "unit": "INR",
+        "value": "850"
+      },
+      "img": "https://angularstore.blob.core.windows.net/angularpics/household-tamta-sauce.jpeg"
+    },
+    {
+      "pid": "016",
+      "name": "Gandagi uthane wala😊",
+      "categoryid": "Household",
+      "features": "aka dustpan(never knew this)",
+      "cost": {
+        "unit": "INR",
+        "value": "150"
+      },
+      "img": "https://angularstore.blob.core.windows.net/angularpics/household-dustpan.jpg"
+    }
+  ]
+}

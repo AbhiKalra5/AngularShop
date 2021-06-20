@@ -1,0 +1,68 @@
+<mat-sidenav-container class="sidenav-container" autosize>
+  <mat-sidenav
+    #drawer
+    mode="side"
+    role="navigation"
+    class="color-deep-purple width-2x"
+  >
+    <mat-nav-list>
+      <a
+        mat-list-item
+        class="color-deep-purple"
+        [routerLink]="['/cart']"
+        routerLinkActive="router-link-active"
+        >{{ "SIDEBAR.CARTSOPTION" | translate }}
+        <mat-icon class="link-icon" matPrefix>shopping_cart</mat-icon></a
+      >
+      <a
+        mat-list-item
+        class="color-deep-purple"
+        routerLink="category"
+        routerLinkActive="router-link-active"
+        >{{ "SIDEBAR.CATEGORYOPTION" | translate }}
+        <mat-icon class="link-icon" matPrefix>menu</mat-icon>
+      </a>
+      <button
+        mat-button
+        class="color-deep-purple"
+        (click)="showLanguages = !showLanguages"
+      >
+        {{ "SIDEBAR.LANGUAGEOPTION" | translate }}
+        <!-- <mat-icon class="link-icon" matPrefix>menu</mat-icon> -->
+      </button>
+      <p *ngIf="showLanguages">
+        <a
+          mat-list-item
+          class="color-deep-purple"
+          (click)="changeLanguage('en')"
+        >
+          English
+        </a>
+        <a
+          mat-list-item
+          class="color-deep-purple"
+          (click)="changeLanguage('fr')"
+        >
+          French
+        </a>
+      </p>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <button
+      class="hamburger button"
+      mat-mini-fab
+      color="primary"
+      aria-label="Example icon button with a menu icon"
+      (click)="drawer.toggle()"
+      matTooltip="{{ 'SIDEBAR.TOGGLEBUTTON' | translate }}"
+    >
+      <mat-icon class="hamburger-icon">menu</mat-icon>
+    </button>
+    <div class="scrollbar" id="style-1">
+      <div class="content">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

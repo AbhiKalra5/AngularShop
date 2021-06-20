@@ -1,0 +1,58 @@
+{
+  "HOME": {
+    "HELLO": "Bonjour, {{value}}",
+    "QUOTE1": "Les vêtements ne signifient rien tant que quelqu'un n'y habite pas.",
+    "QUOTE2": "Je ne conçois pas de vêtements. Je conçois des rêves.",
+    "QUOTE3": "La mode est l'armure pour survivre à la réalité de la vie quotidienne.",
+    "STARTBUTTON": "Commencer à magasiner",
+    "TAGLINE1": "ACHETER AVEC NOUS",
+    "TAGSUBHEADING1": "Obtenez des réductions exclusives sur notre site!",
+    "TAGLINE2": "Ne vous inquiétez pas des frais de livraison !!",
+    "TAGSUBHEADING2": "Rejoignez-nous maintenant pour obtenir les 5 premiers frais de livraison sur la maison!"
+  },
+  "FOOTER": {
+    "TITLE": "© Fabriqué en Inde avec ❤"
+  },
+  "HEADER": {
+    "SEARCHTOOLTIP": "Rechercher dans les produits",
+    "HOMEPAGETOOLTIP": "Aller à la page d'accueil",
+    "LOGINBUTTON": "Connexion",
+    "LOGINTOOLTIP": "Connectez-vous au site",
+    "LOGOUTBUTTON": "Se déconnecter",
+    "LOGOUTTOOLTIP": "Déconnexion du site",
+    "CARTTOOLTIP": "Aller à la page du panier"
+  },
+  "SIDEBAR": {
+    "TOGGLEBUTTON": "Basculer la navigation latérale",
+    "CARTSOPTION": "Panier",
+    "CATEGORYOPTION": "Catégorie",
+    "LANGUAGEOPTION": "Langues"
+  },
+  "PLP": {
+    "FILTER": "Filtre",
+    "FILTERTOOLTIP": "3 caractères minimum requis",
+    "ADDTOCARTBUTTON": "Ajouter au panier",
+    "SHOWINFOBUTTON": "Plus d'informations",
+    "NOPRODUCTSNOTE": "Aucun produit dans cette catégorie, veuillez revenir après quelques jours."
+  },
+  "PDP": {
+    "FEATURELIST": "Liste des fonctionnalités"
+  },
+  "CART": {
+    "TITLE": "Panier",
+    "CARTTABLENAME": "Nom",
+    "CARTTABLEQUANTITY": "Quantité",
+    "CARTTABLECOST": "Coût",
+    "CARTTABLEACTIONS": "Actions",
+    "CARTTABLEDELETEACTIONS": "Supprimer",
+    "ADDRESSTITLE": "Adresse",
+    "ADDRESSHOUSENUMBER": "Numéro de maison",
+    "ADDRESSSTREETNUMBER": "Adresse postale",
+    "ADDRESSCITY": "Ville",
+    "ADDRESSPOSTALCODE": "Code postal.",
+    "ADDRESSSTATE": "État",
+    "CARTPROCEEDTOPAY": "Procéder au paiement",
+    "CARTTOTALAMOUNT": "Montant total",
+    "CHECKOUTCONTINUE": "Continuer vos achats"
+  }
+}

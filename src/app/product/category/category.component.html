@@ -1,0 +1,14 @@
+<mat-grid-list cols="2" rowHeight="2:1">
+  <span
+    *ngFor="let item of categories; let i = index"
+    [routerLink]="['/category', item.categoryId, 'list']"
+    routerLinkActive="router-link-active"
+  >
+    <mat-grid-tile>
+      <h1>{{ item.categoryId | uppercase }}</h1>
+      <span *ngIf="item.description != ''">
+        <mat-grid-tile-footer>{{ item.description }}</mat-grid-tile-footer>
+      </span>
+    </mat-grid-tile>
+  </span>
+</mat-grid-list>

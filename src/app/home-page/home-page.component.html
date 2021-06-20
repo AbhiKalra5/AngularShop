@@ -1,0 +1,104 @@
+<mat-toolbar class="container ml-5">
+  <span class="h3-responsive">{{ "HOME.HELLO" | translate: param }}</span>
+</mat-toolbar>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="card new-card" style="width: 18rem">
+        <img
+          class="card-img-top img-card"
+          src="https://angularstore.blob.core.windows.net/angularpics/fashion-background3.jpg"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <blockquote class="blockquote card-text">
+            <p class="mb-0">
+              {{ "HOME.QUOTE1" | translate }}
+            </p>
+            <footer class="blockquote-footer">
+              <cite title="Source Title">Marc Jacobs</cite>
+            </footer>
+          </blockquote>
+          <a
+            [routerLink]="['/category']"
+            routerLinkActive="router-link-active"
+            class="btn btn-primary"
+            >{{ "HOME.STARTBUTTON" | translate }}</a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card new-card" style="width: 18rem">
+        <img
+          class="card-img-top img-card"
+          src="https://angularstore.blob.core.windows.net/angularpics/fashion-background2.jpg"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <blockquote class="blockquote card-text">
+            <p class="mb-0">{{ "HOME.QUOTE2" | translate }}</p>
+            <footer class="blockquote-footer">
+              <cite title="Source Title">Ralph Lauren</cite>
+            </footer>
+          </blockquote>
+
+          <a
+            [routerLink]="['/category']"
+            routerLinkActive="router-link-active"
+            class="btn btn-primary"
+            >{{ "HOME.STARTBUTTON" | translate }}</a
+          >
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card new-card" style="width: 18rem">
+        <img
+          class="card-img-top img-card"
+          src="https://angularstore.blob.core.windows.net/angularpics/fashion-background.jpg"
+          alt="Card image cap"
+        />
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <blockquote class="blockquote card-text">
+            <p class="mb-0">
+              {{ "HOME.QUOTE3" | translate }}
+            </p>
+            <footer class="blockquote-footer float-right">
+              <cite title="Source Title">Bill Cunnigham</cite>
+            </footer>
+          </blockquote>
+          <a
+            [routerLink]="['/category']"
+            routerLinkActive="router-link-active"
+            class="btn btn-primary"
+            >{{ "HOME.STARTBUTTON" | translate }}</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="fluid-container new">
+  <span>
+    <div class="first-div">
+      <h1 class="h1-responsive text-warning font-weight-bold">
+        {{ "HOME.TAGLINE1" | translate }}
+      </h1>
+      <p class="h5-responsive offer text-size">
+        {{ "HOME.TAGSUBHEADING1" | translate }}
+      </p>
+    </div>
+    <div class="mt-5">
+      <h1 class="h1-responsive text-warning font-weight-bold">
+        {{ "HOME.TAGLINE2" | translate }}
+      </h1>
+      <p class="h5-responsive text-success offer text-size">
+        {{ "HOME.TAGSUBHEADING2" | translate }}
+      </p>
+    </div>
+  </span>
+</div>

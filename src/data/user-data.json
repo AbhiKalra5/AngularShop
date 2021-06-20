@@ -1,0 +1,29 @@
+{
+  "data-info": "user-data-version-1",
+  "users": [
+    {
+      "uid": "001",
+      "name": "Pheneas",
+      "email-id": "pheneas@gmail.com",
+      "password": "12345"
+    },
+    {
+      "uid": "002",
+      "name": "Ferb",
+      "email-id": "ferb@gmail.com",
+      "password": "12345"
+    },
+    {
+      "uid": "003",
+      "name": "Perry",
+      "email-id": "perry@gmail.com",
+      "password": "12345"
+    },
+    {
+      "uid": "005",
+      "name": "Candice",
+      "email-id": "candice@gmail.com",
+      "password": "candice"
+    }
+  ]
+}

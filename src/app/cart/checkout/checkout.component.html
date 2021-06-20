@@ -1,0 +1,42 @@
+<div class="container" *ngIf="order != undefined || order != null">
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="h1-responsive text-center">Order placed successfully!</h1>
+      <h1 class="text-center">Order Info</h1>
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">{{ "CART.CARTTABLENAME" | translate }}</th>
+            <th scope="col">{{ "CART.CARTTABLEQUANTITY" | translate }}</th>
+            <th scope="col">{{ "CART.CARTTABLECOST" | translate }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of order.entries; let i = index">
+            <th scope="row">{{ i + 1 }}</th>
+            <td>{{ item.product.name }}</td>
+            <td>{{ item.quantity }}</td>
+            <td>{{ item.product.cost.value | currency: "INR" }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <div>
+    <div>
+      <span class="cart-total"
+        ><h2 class="h2-responsive d-inline">Cart Total:</h2></span
+      >
+      <span class="cart-total-value">{{ order.total | currency: "INR" }}</span>
+    </div>
+    <button
+      mat-raised-button
+      color="accent"
+      [routerLink]="['/category']"
+      routerLinkActive="router-link-active"
+    >
+      {{ "CART.CHECKOUTCONTINUE" | translate }}
+    </button>
+  </div>
+</div>

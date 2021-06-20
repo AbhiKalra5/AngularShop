@@ -1,0 +1,29 @@
+{
+  "data-info": "category-data-version-1",
+  "categories": [
+    {
+      "categoryId": "Mobile",
+      "description": ""
+    },
+    {
+      "categoryId": "Fashion",
+      "description": ""
+    },
+    {
+      "categoryId": "Laptop",
+      "description": ""
+    },
+    {
+      "categoryId": "Household",
+      "description": ""
+    },
+    {
+      "categoryId": "Accessories",
+      "description": ""
+    },
+    {
+      "categoryId": "books",
+      "description": ""
+    }
+  ]
+}

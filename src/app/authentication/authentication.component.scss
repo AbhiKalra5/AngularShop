@@ -1,0 +1,32 @@
+.login-card-wrapper{
+    margin-top: 25px;
+}
+.login-form-wrapper{
+    margin-top: 25px;
+}
+@media(max-width:786px) {
+    .login-card-wrapper{
+        width:100%;
+    }
+    .login-full-width{
+        width:100%;
+    }
+}
+@media(min-width:786px) {
+    .login-card-wrapper{
+        margin-left: 35%;
+        width:35%;
+    }
+    .login-full-width{
+        width:100%;
+    }
+}
+.head{
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+    align-items: center;
+    margin-left: 90px;
+    // color:#ffd740;
+    color:#673ab7;
+}

@@ -1,0 +1,32 @@
+<div class="">{{ product.pid }} / {{ product.name }}</div>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col">
+      <div>
+        <img [src]="product.img" class="pdp-img" />
+      </div>
+    </div>
+    <div class="col">
+      <div>
+        <span>
+          <h1>{{ "PDP.FEATURELIST" | translate }}</h1>
+          <p>{{ product.features }}</p>
+        </span>
+        <div class="mt-2 row">
+          <div class="col-md-2"></div>
+          <div class="col-md-10">
+            <button
+              mat-raised-button
+              class="button"
+              color="accent"
+              (click)="addProductToCart()"
+            >
+              {{ product.cost.value | currency: "INR" }}
+              <mat-icon>add_shopping_cart</mat-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

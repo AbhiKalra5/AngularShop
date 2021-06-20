@@ -1,0 +1,116 @@
+<div class="container" *ngIf="cart != null && cart != undefined">
+  <div class="row">
+    <div class="col-md-9">
+      <h1 class="text-center">{{ "CART.TITLE" | translate }}</h1>
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">{{ "CART.CARTTABLENAME" | translate }}</th>
+            <th scope="col">{{ "CART.CARTTABLEQUANTITY" | translate }}</th>
+            <th scope="col">{{ "CART.CARTTABLECOST" | translate }}</th>
+            <th scope="col">{{ "CART.CARTTABLEACTIONS" | translate }}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of cart.entries; let i = index">
+            <th scope="row">{{ i + 1 }}</th>
+            <td>{{ item.product.name }}</td>
+            <td>{{ item.quantity }}</td>
+            <td>{{ item.product.cost.value | currency: "INR" }}</td>
+            <td>
+              <button mat-raised-button color="warn" (click)="removeProduct(i)">
+                {{ "CART.CARTTABLEDELETEACTIONS" | translate }}
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-md-3">
+      <h2 class="h3-responsive text-center">
+        {{ "CART.ADDRESSTITLE" | translate }}
+      </h2>
+      <form #addressForm="ngForm" (ngSubmit)="formSubmitted(addressForm)">
+        <div class="form-group">
+          <mat-form-field class="login-full-width">
+            <input
+              matInput
+              placeholder="{{ 'CART.ADDRESSHOUSENUMBER' | translate }}"
+              [(ngModel)]="address.line1"
+              name="Housenumber"
+              required
+            />
+          </mat-form-field>
+        </div>
+        <div class="form-group">
+          <mat-form-field class="login-full-width">
+            <input
+              matInput
+              placeholder="{{ 'CART.ADDRESSSTREETNUMBER' | translate }}"
+              [(ngModel)]="address.line2"
+              name="StreetAddress"
+              required
+            />
+          </mat-form-field>
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <mat-form-field class="login-full-width">
+              <input
+                matInput
+                placeholder="{{ 'CART.ADDRESSCITY' | translate }}"
+                [(ngModel)]="address.city"
+                name="City"
+                required
+              />
+            </mat-form-field>
+          </div>
+          <div class="form-group col-md-6">
+            <mat-form-field class="login-full-width">
+              <input
+                type="tel"
+                matInput
+                placeholder="{{ 'CART.ADDRESSPOSTALCODE' | translate }}"
+                [(ngModel)]="address.postal"
+                name="PostalCd."
+                required
+              />
+            </mat-form-field>
+          </div>
+        </div>
+        <div class="form-group">
+          <mat-form-field class="login-full-width">
+            <input
+              matInput
+              placeholder="{{ 'CART.ADDRESSSTATE' | translate }}"
+              [(ngModel)]="address.state"
+              name="State"
+              required
+            />
+          </mat-form-field>
+        </div>
+        <button
+          type="submit"
+          mat-raised-button
+          color="accent"
+          [disabled]="cart.total == 0"
+        >
+          {{ "CART.CARTPROCEEDTOPAY" | translate }}
+        </button>
+        <div>
+          <span class="cart-total"
+            ><h2 class="h2-responsive d-inline">
+              {{ "CART.CARTTOTALAMOUNT" | translate }}:
+            </h2></span
+          >
+          <span class="cart-total-value">
+            <h3 class="d-inline">
+              {{ cart.total | currency: "INR" }}
+            </h3>
+          </span>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
